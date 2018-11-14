@@ -41,6 +41,7 @@ public class UserServiceImpl implements  UserService {
     @Transactional(readOnly = true)
     public List<User> queryAll() {
         List<User> users = userDao.queryAll();
+        System.out.println("maven_ssm  项目");
         return users;
     }
 }
